@@ -1,6 +1,6 @@
 {
   "name": "get-latest-release",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Find the latest release of a given GitHub repository",
   "license": "MIT",
   "repository": "jxom/get-latest-release",
