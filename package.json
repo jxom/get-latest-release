@@ -1,6 +1,6 @@
 {
   "name": "get-latest-release",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Find the latest release of a given GitHub repository",
   "license": "MIT",
   "repository": "jxom/get-latest-release",
@@ -31,5 +31,14 @@
   },
   "devDependencies": {
     "xo": "^0.17.0"
+  },
+  "xo": {
+    "space": true,
+    "rules": {
+      "object-curly-spacing": [
+        "error",
+        "always"
+      ]
+    }
   }
 }
