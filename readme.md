@@ -1,4 +1,4 @@
-# get-latest-release [![Build Status](https://travis-ci.org/jxom/get-latest-release.svg?branch=master)](https://travis-ci.org/jxom/get-latest-release)
+# get-latest-release
 
 > Find the latest release of a given GitHub repository
 
