@@ -35,26 +35,6 @@ getLatestRelease({
 ```
 
 
-## API
-
-### getLatestRelease(input, [options])
-
-#### input
-
-Type: `string`
-
-Lorem ipsum.
-
-#### options
-
-##### foo
-
-Type: `boolean`<br>
-Default: `false`
-
-Lorem ipsum.
-
-
 ## CLI
 
 ```
@@ -64,17 +44,24 @@ $ npm install --global get-latest-release
 ```
 $ get-latest-release --help
 
+  Find the latest release of a given GitHub repository
+
   Usage
-    get-latest-release [input]
+    $ get-latest-release -o [owner] -r [repository]
 
   Options
-    --foo  Lorem ipsum [Default: false]
+    -o  Owner of the repository [required]
+    -r  Respository to get latest released from [required]
 
   Examples
-    $ get-latest-release
-    unicorns & rainbows
-    $ get-latest-release ponies
-    ponies & rainbows
+    $ get-latest-release -r caprine -o sindresorhus -e dmg
+        The latest version is: v2.3.1
+    Tag URL: https://github.com/sindresorhus/caprine/releases/tag/v2.3.1
+
+    Asset name: caprine-2.3.1.dmg
+    Asset URL: https://api.github.com/repos/sindresorhus/caprine/releases/assets/3867404
+    Content Type: application/x-apple-diskimage
+    Download URL: https://github.com/sindresorhus/caprine/releases/download/v2.3.1/caprine-2.3.1.dmg
 ```
 
 
