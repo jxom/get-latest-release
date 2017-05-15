@@ -31,7 +31,7 @@ const printLatestReleaseAsset = asset => {
   console.log(`Download URL: ${asset.download_url}`);
 };
 
-(async () => {
+const handleCLI = async () => {
   const flags = cli.flags;
   if (!flags.o) {
     console.log('Error! Please specify an owner (-o).');
@@ -57,4 +57,6 @@ const printLatestReleaseAsset = asset => {
   } else if (latest.assets) {
     latest.assets.forEach(asset => printLatestReleaseAsset(asset));
   }
-})();
+};
+
+handleCLI();
