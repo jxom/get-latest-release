@@ -1,0 +1,35 @@
+{
+  "name": "get-latest-release",
+  "version": "0.0.0",
+  "description": "Find the latest release of a given GitHub repository",
+  "license": "MIT",
+  "repository": "jxom/get-latest-release",
+  "author": {
+    "name": "jxom",
+    "email": "jakemoxey@gmail.com",
+    "url": "jxom.io"
+  },
+  "bin": "cli.js",
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "index.js",
+    "cli.js"
+  ],
+  "keywords": [
+    "cli-app",
+    "cli",
+    ""
+  ],
+  "dependencies": {
+    "axios": "^0.16.1",
+    "meow": "^3.7.0"
+  },
+  "devDependencies": {
+    "xo": "^0.17.0"
+  }
+}
