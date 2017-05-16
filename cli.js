@@ -10,6 +10,7 @@ Usage
 Options
   -o	Owner of the repository [required]
   -r	Respository to get latest released from [required]
+  -e  Extension of a target release asset [optional]
 
 Examples
   $ get-latest-release -r caprine -o sindresorhus -e dmg
