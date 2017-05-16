@@ -45,18 +45,22 @@ const handleCLI = async () => {
     return null;
   }
 
-  const latest = await getLatestRelease({
-    owner: flags.o,
-    repo: flags.r,
-    ext: flags.e
-  });
+  try {
+    const latest = await getLatestRelease({
+      owner: flags.o,
+      repo: flags.r,
+      ext: flags.e
+    });
 
-  console.log(`The latest version is: ${latest.version}`);
-  console.log(`Tag URL: ${latest.url}`);
-  if (latest.asset) {
-    printLatestReleaseAsset(latest.asset);
-  } else if (latest.assets) {
-    latest.assets.forEach(asset => printLatestReleaseAsset(asset));
+    console.log(`The latest version is: ${latest.version}`);
+    console.log(`Tag URL: ${latest.url}`);
+    if (latest.asset) {
+      printLatestReleaseAsset(latest.asset);
+    } else if (latest.assets) {
+      latest.assets.forEach(asset => printLatestReleaseAsset(asset));
+    }
+  } catch (err) {
+    console.log(err.message);
   }
 };
 

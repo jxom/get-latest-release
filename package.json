@@ -38,7 +38,8 @@
       "object-curly-spacing": [
         "error",
         "always"
-      ]
+      ],
+      "camelcase": 0
     }
   }
 }
