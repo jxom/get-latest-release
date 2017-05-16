@@ -55,7 +55,7 @@ $ get-latest-release --help
 
   Examples
     $ get-latest-release -r caprine -o sindresorhus -e dmg
-        The latest version is: v2.3.1
+    The latest version is: v2.3.1
     Tag URL: https://github.com/sindresorhus/caprine/releases/tag/v2.3.1
 
     Asset name: caprine-2.3.1.dmg
