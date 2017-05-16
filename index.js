@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const axios = require('axios');
 
 const getLatestRelease = async ({ owner, repo, ext }) => {
