@@ -11,7 +11,7 @@
   },
   "bin": "cli.js",
   "engines": {
-    "node": ">=7"
+    "node": ">=7.6.0"
   },
   "scripts": {
     "test": "xo"
